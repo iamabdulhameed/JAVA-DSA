@@ -2,6 +2,8 @@ package com.random;
 
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
+
 public class Random1 {
 
 
@@ -28,7 +30,6 @@ public class Random1 {
      * We have the start index and end index in the substring method where
      * start index is inclusive and end index is exclusive.
      */
-
     @Test
     public void swapTwoString() {
         // Logic 1
@@ -45,5 +46,23 @@ public class Random1 {
         s5 = s4.substring(0, s4.length() - s5.length());
         s4 = s4.substring(s4.length() - s5.length());
         System.out.println("s4: " + s4 + " s5: " +s5);
+    }
+
+    /**
+     * Question 3: Write a Java Program to print the Fibonacci Series.
+     * Solution 3. As we know Fibonacci series is a series of numbers in which each number is the sum of the two preceding numbers.
+     * For writing a Java Program, first we declare an array and assign the values 0 and 1 to the indexes 0 and 1 of the defined array.
+     * Then we write the logic to get the values of all the indexes of the total Fibonacci series length.
+     */
+    @Test
+    public void fibonacciSeries() {
+        int arrLength = 10;
+        int[] arr = new int[arrLength];
+        arr[0] = 0;
+        arr[1] = 1;
+        for (int i = 2; i < arrLength; i++) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
+        System.out.println(Arrays.toString(arr));
     }
 }
