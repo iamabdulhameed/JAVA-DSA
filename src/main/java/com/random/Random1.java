@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class Random1 {
 
-
     /**
      * Question 1: Write a Java Program to reverse a String.
      * Solution 1: As asked in the above question, we need to reverse a String. For Ex:
